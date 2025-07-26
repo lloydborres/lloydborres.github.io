@@ -6,13 +6,13 @@
   h1 {
     margin: 0;
     font-size: 60px;
-    color: #191919;
+    color: #212121;
   }
 
   p {
     margin: 15px 0 0;
     font-size: 20px;
-    color: #888;
+    color: #616161;
   }
 }
 
@@ -23,7 +23,7 @@
 
   a.home-featured-item {
     display: flex;
-    background: #f2f2f2;
+    background: #e0e0e0;
     transition: background 0.2s ease, color 0.2s ease;
     text-decoration: none;
 
@@ -46,7 +46,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: #191919;
+      background-color: #212121;
       opacity: 0;
       transition: background-color 0.2s ease, opacity 0.2s ease;
     }
@@ -60,7 +60,7 @@
       .home-featured-title {
         font-size: 20px;
         font-weight: 600;
-        color: #191919;
+        color: #212121;
         text-align: center;
         padding: 6% 8%;
         width: 100%;
@@ -71,10 +71,10 @@
   a.home-featured-item:hover,
   a.home-featured-item:focus,
   a.home-featured-item:active {
-    background: #191919;
+    background: #212121;
 
     .home-featured-thumbnail-container::after {
-      background-color: #191919;
+      background-color: #212121;
       opacity: 0.5;
     }
 

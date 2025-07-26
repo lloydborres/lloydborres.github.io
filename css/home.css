@@ -19,6 +19,7 @@
 .home-featured-container {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   margin-bottom: 20px;
 
   a.home-featured-item {
@@ -28,6 +29,7 @@
     text-decoration: none;
 
     .home-featured-thumbnail-container {
+      height: 450px;
       width: calc(100% - 450px);
       position: relative;
 
@@ -68,6 +70,10 @@
     }
   }
 
+  a.home-featured-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
   a.home-featured-item:hover,
   a.home-featured-item:focus,
   a.home-featured-item:active {
@@ -106,6 +112,7 @@
       flex-direction: column;
 
       .home-featured-thumbnail-container {
+        height: initial;
         width: 100%;
 
         img {
@@ -122,6 +129,10 @@
           font-size: 14px;
         }
       }
+    }
+
+    a.home-featured-item:nth-child(even) {
+      flex-direction: column;
     }
   }
 }

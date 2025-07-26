@@ -6,6 +6,12 @@ navTemplate.innerHTML = `
 <div class="nav-name">Lloyd Borres</div>
 <div class="nav-socials">
   <a
+    href="mailto:dev@lloydborres.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><img alt="Email" src="./assets/icons/mail.svg"
+  /></a>
+  <a
     href="https://github.com/lloydborres"
     target="_blank"
     rel="noopener noreferrer"
@@ -27,6 +33,12 @@ footerTemplate.innerHTML = `
   © 2025. All rights reserved.
 </p>
 <div class="footer-socials">
+  <a
+    href="mailto:dev@lloydborres.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><img alt="Email" src="./assets/icons/mail.svg"
+  /></a>
   <a
     href="https://github.com/lloydborres"
     target="_blank"

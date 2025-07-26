@@ -1,0 +1,131 @@
+#root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-container,
+.content-container,
+.footer-container {
+  padding-left: calc((100% - 1200px) / 2);
+  padding-right: calc((100% - 1200px) / 2);
+}
+
+.navbar-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    width: 30%;
+
+    a {
+      text-decoration: none;
+      color: #333333;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  .navbar-name {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .navbar-socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+
+    a {
+      padding: 14px;
+    }
+
+    img {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+.content-container {
+  min-height: calc(100vh - (92.5px + 39px));
+}
+
+.footer-container {
+  display: flex;
+  background-color: #333333;
+
+  .footer-copyright {
+    font-size: 12px;
+    color: white;
+
+    a {
+      color: #cc0000;
+    }
+  }
+
+  .footer-socials {
+    display: none;
+
+    a {
+      padding: 14px;
+    }
+
+    img {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+/* xs and sm devices or phones */
+@media (max-width: 479px), (min-width: 480px) and (max-width: 767px) {
+  .navbar-container,
+  .content-container,
+  .footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-container {
+    ul,
+    .navbar-socials {
+      display: none;
+    }
+
+    .navbar-name {
+      width: 100%;
+    }
+  }
+
+  .content-container {
+    min-height: calc(100vh - (73px + 126.5px));
+  }
+
+  .footer-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .footer-socials {
+      display: flex;
+      padding-top: 10px;
+    }
+  }
+}

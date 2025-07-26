@@ -1,0 +1,127 @@
+.home-header-container {
+  padding-top: 100px;
+  padding-bottom: 110px;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 60px;
+    color: #191919;
+  }
+
+  p {
+    margin: 15px 0 0;
+    font-size: 20px;
+    color: #888;
+  }
+}
+
+.home-featured-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  a.home-featured-item {
+    display: flex;
+    background: #f2f2f2;
+    transition: background 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+
+    .home-featured-thumbnail-container {
+      width: calc(100% - 450px);
+      position: relative;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .home-featured-thumbnail-container:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #191919;
+      opacity: 0;
+      transition: background-color 0.2s ease, opacity 0.2s ease;
+    }
+
+    .home-featured-title-container {
+      width: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .home-featured-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #191919;
+        text-align: center;
+        padding: 6% 8%;
+        width: 100%;
+      }
+    }
+  }
+
+  a.home-featured-item:hover,
+  a.home-featured-item:focus,
+  a.home-featured-item:active {
+    background: #191919;
+
+    .home-featured-thumbnail-container::after {
+      background-color: #191919;
+      opacity: 0.5;
+    }
+
+    .home-featured-title-container {
+      .home-featured-title {
+        color: white;
+      }
+    }
+  }
+}
+
+/* xs and sm devices or phones */
+@media (max-width: 479px), (min-width: 480px) and (max-width: 767px) {
+  .home-header-container {
+    padding-top: 34px;
+    padding-bottom: 38px;
+
+    h1 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .home-featured-container {
+    a.home-featured-item {
+      flex-direction: column;
+
+      .home-featured-thumbnail-container {
+        width: 100%;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .home-featured-title-container {
+        width: 100%;
+
+        .home-featured-title {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

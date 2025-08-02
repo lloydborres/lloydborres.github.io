@@ -85,14 +85,14 @@ nav {
 }
 
 .content-container {
-  min-height: calc(100vh - (96.5px + 60px));
+  min-height: calc(100vh - (96.5px + 80px));
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px; /* Update content-container above when changing */
+  height: 60px;
   background-color: #212121;
 
   .footer-copyright {
@@ -181,7 +181,7 @@ footer {
   }
 
   .content-container {
-    min-height: calc(100vh - (73px + 120px));
+    min-height: calc(100vh - (95px + 140px));
   }
 
   footer {
@@ -189,7 +189,7 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    height: 120px; /* Update content-container above when changing */
+    height: 120px;
 
     .footer-socials {
       display: flex;

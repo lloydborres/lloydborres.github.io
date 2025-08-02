@@ -2,6 +2,7 @@ const navTemplate = document.createElement("template");
 navTemplate.innerHTML = `
 <ul id="nav-links" class="nav-links">
   <li><a href="/">Home</a></li>
+  <li><a href="/contact">Contact</a></li>
 </ul>
 <div class="nav-logo">
   <img alt="Logo" src="./assets/lloydborres_logo_dark.svg" />
@@ -12,9 +13,6 @@ navTemplate.innerHTML = `
   </button>
 </div>
 <div class="nav-socials">
-  <a href="mailto:dev@lloydborres.com" target="_blank" rel="noopener noreferrer"
-    ><img alt="Email" src="./assets/icons/mail.svg"
-  /></a>
   <a
     href="https://github.com/lloydborres"
     target="_blank"

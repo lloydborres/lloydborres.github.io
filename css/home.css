@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 
   a.home-featured-item {
     display: flex;

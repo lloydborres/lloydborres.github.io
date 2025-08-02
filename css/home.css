@@ -56,6 +56,7 @@
     .home-featured-title-container {
       width: 450px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
 
@@ -64,8 +65,16 @@
         font-weight: 600;
         color: #212121;
         text-align: center;
-        padding: 6% 8%;
-        width: 100%;
+        padding: 6% 8% 1%;
+        width: 84%;
+      }
+
+      .home-featured-description {
+        font-size: 14px;
+        color: #212121;
+        text-align: center;
+        padding: 1% 8% 6%;
+        width: 84%;
       }
     }
   }
@@ -86,6 +95,10 @@
 
     .home-featured-title-container {
       .home-featured-title {
+        color: white;
+      }
+
+      .home-featured-description {
         color: white;
       }
     }

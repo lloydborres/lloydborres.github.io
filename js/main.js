@@ -1,17 +1,13 @@
 const navTemplate = document.createElement("template");
 navTemplate.innerHTML = `
-<ul id="nav-links" class="nav-links">
+<ul id="main-nav-items" class="nav-items">
   <li><a href="/">Home</a></li>
   <li><a href="/contact">Contact</a></li>
 </ul>
-<div class="nav-logo">
-  <img alt="Logo" src="./assets/lloydborres_logo_dark.svg" />
-</div>
-<div class="nav-menu-container">
-  <button class="nav-menu-button" onclick="toggleMenu()">
-    <img alt="Menu" src="./assets/icons/menu.svg" />
-  </button>
-</div>
+<img class="nav-logo" alt="Logo" src="./assets/lloydborres_logo_dark.svg" />
+<button class="nav-menu-button" onclick="toggleMenu()">
+  <img alt="Menu" src="./assets/icons/menu.svg" />
+</button>
 <div class="nav-socials">
   <a
     href="https://github.com/lloydborres"
@@ -51,6 +47,6 @@ document.getElementById("main-nav").appendChild(navTemplate.content);
 document.getElementById("main-footer").appendChild(footerTemplate.content);
 
 function toggleMenu() {
-  const navLinksEl = document.getElementById("nav-links");
+  const navLinksEl = document.getElementById("main-nav-items");
   navLinksEl.classList.toggle("active");
 }

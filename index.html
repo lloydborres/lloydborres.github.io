@@ -10,8 +10,6 @@
       name="description"
       content="I'm a Software Engineer and my hobbies include Video Games, Anime and Filming."
     />
-
-    <!-- Open Graph -->
     <meta property="og:title" content="Lloyd Borres" />
     <meta
       property="og:description"
@@ -29,81 +27,78 @@
     <script src="./js/main.js" type="text/javascript" defer></script>
   </head>
   <body>
-    <div id="root">
-      <nav id="main-nav"></nav>
-      <!-- Content Start -->
-      <div id="main-content" class="content-container">
-        <div class="home-header-container">
-          <h1>Hi, I'm Lloyd!</h1>
-          <p>
-            I'm a Software Engineer and my hobbies include Video Games, Anime
-            and Filming.
-          </p>
-        </div>
-        <div class="home-featured-container">
-          <a
-            class="home-featured-item"
-            href="https://portfolio.lloydborres.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="home-featured-thumbnail-container">
-              <img
-                alt="Portfolio"
-                src="https://cdn.lloydborres.com/images/covers/lloydborres_portfolio_cover.svg"
-              />
-            </div>
-            <div class="home-featured-title-container">
-              <div class="home-featured-title">Portfolio</div>
-              <div class="home-featured-description">
-                A website to showcase my skills and experiences built with
-                React.
-              </div>
-            </div>
-          </a>
-          <a
-            class="home-featured-item"
-            href="https://evangels.lloydborres.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="home-featured-thumbnail-container">
-              <img
-                alt="EvAngels"
-                src="https://cdn.lloydborres.com/images/thumbnails/evangels_site_thumbnail.jpg"
-              />
-            </div>
-            <div class="home-featured-title-container">
-              <div class="home-featured-title">EvAngels</div>
-              <div class="home-featured-description">
-                A YouTube channel to document every fun experience and compile
-                them into a single video so that I can relive those moments.
-              </div>
-            </div>
-          </a>
-          <a
-            class="home-featured-item"
-            href="https://www.deviantart.com/jhiichan"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="home-featured-thumbnail-container">
-              <img
-                alt="Artworks (DeviantArt)"
-                src="https://cdn.lloydborres.com/images/thumbnails/artworks_thumbnail.jpg"
-              />
-            </div>
-            <div class="home-featured-title-container">
-              <div class="home-featured-title">Artworks<br />(DeviantArt)</div>
-              <div class="home-featured-description">
-                My digital artworks uploaded at DeviantArt.
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- Content End -->
-      <footer id="main-footer"></footer>
-    </div>
+    <nav id="main-nav" class="page-nav"></nav>
+    <header class="page-header">
+      <h1>Hi, I'm Lloyd!</h1>
+      <p>
+        I'm a Software Engineer and my hobbies include Video Games, Anime and
+        Filming.
+      </p>
+    </header>
+    <main class="page-content featured-projects">
+      <a
+        class="project-link"
+        href="https://portfolio.lloydborres.com"
+        rel="noopener noreferrer"
+      >
+        <article class="project-item">
+          <figure class="project-thumbnail">
+            <img
+              alt="Portfolio"
+              src="https://cdn.lloydborres.com/images/covers/lloydborres_portfolio_cover.svg"
+            />
+          </figure>
+          <header class="project-details">
+            <h2 class="project-title">Portfolio</h2>
+            <p class="project-description">
+              A website to showcase my skills and experiences built with React.
+            </p>
+          </header>
+        </article>
+      </a>
+      <a
+        class="project-link"
+        href="https://evangels.lloydborres.com"
+        rel="noopener noreferrer"
+      >
+        <article class="project-item">
+          <figure class="project-thumbnail">
+            <img
+              alt="EvAngels"
+              src="https://cdn.lloydborres.com/images/thumbnails/evangels_site_thumbnail.jpg"
+            />
+          </figure>
+          <header class="project-details">
+            <h2 class="project-title">EvAngels</h2>
+            <p class="project-description">
+              A YouTube channel to document every fun experience and compile
+              them into a single video so that I can relive those moments.
+            </p>
+          </header>
+        </article>
+      </a>
+      <a
+        class="project-link"
+        href="https://www.deviantart.com/jhiichan"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <article class="project-item">
+          <figure class="project-thumbnail">
+            <img
+              alt="Artworks (DeviantArt)"
+              src="https://cdn.lloydborres.com/images/thumbnails/artworks_thumbnail.jpg"
+            />
+          </figure>
+          <header class="project-details">
+            <h2 class="project-title">Artworks<br />(DeviantArt)</h2>
+            <p class="project-description">
+              My digital artworks uploaded at DeviantArt.
+            </p>
+          </header>
+        </article>
+      </a>
+    </main>
+    <footer id="main-footer" class="page-footer"></footer>
   </body>
 </html>

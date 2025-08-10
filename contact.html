@@ -10,9 +10,7 @@
       name="description"
       content="I'm a Software Engineer and my hobbies include Video Games, Anime and Filming."
     />
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Contact - Lloyd Borres" />
+    <meta property="og:title" content="Lloyd Borres" />
     <meta
       property="og:description"
       content="I'm a Software Engineer and my hobbies include Video Games, Anime and Filming."
@@ -29,38 +27,32 @@
     <script src="./js/main.js" type="text/javascript" defer></script>
   </head>
   <body>
-    <div id="root">
-      <nav id="main-nav"></nav>
-      <!-- Content Start -->
-      <div id="main-content" class="content-container">
-        <div class="contact-container">
-          <div class="contact-message-container">
-            <h2>Contact</h2>
-            <p>
-              Got feedback, thoughts, or just want to connect?<br />
-              Send me a message. I'd be happy to hear from you.
-            </p>
+    <nav id="main-nav" class="page-nav"></nav>
+    <header class="page-header">
+      <h1>Contact</h1>
+      <p>
+        Got feedback, thoughts, or just want to connect?<br />
+        Send me a message. I'd be happy to hear from you.
+      </p>
+    </header>
+    <main class="page-content featured-projects">
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <img alt="Email" src="./assets/icons/mail_filled.svg" />
           </div>
-          <div class="contact-list-container">
-            <div class="contact-list-item">
-              <div class="contact-list-item-icon">
-                <img alt="Email" src="./assets/icons/mail_filled.svg" />
-              </div>
-              <div class="contact-list-item-message">
-                <p>Send an email</p>
-                <a
-                  href="mailto:dev@lloydborres.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >dev@lloydborres.com</a
-                >
-              </div>
-            </div>
+          <div class="contact-message">
+            <p>Send an email</p>
+            <a
+              href="mailto:dev@lloydborres.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >dev@lloydborres.com</a
+            >
           </div>
         </div>
       </div>
-      <!-- Content End -->
-      <footer id="main-footer"></footer>
-    </div>
+    </main>
+    <footer id="main-footer" class="page-footer"></footer>
   </body>
 </html>
